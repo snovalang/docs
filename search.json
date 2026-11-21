@@ -1,0 +1,16 @@
+---
+layout: null
+---
+[
+{% assign doc_pages = site.pages | where_exp: "p", "p.page_id != nil" %}
+{% for p in doc_pages %}
+  {
+    "id": {{ p.page_id | jsonify }},
+    "lang": {{ p.lang | jsonify }},
+    "title": {{ p.title | jsonify }},
+    "description": {{ p.description | default: "" | jsonify }},
+    "url": {{ p.url | relative_url | jsonify }},
+    "content": {{ p.content | strip_html | normalize_whitespace | truncate: 3500 | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

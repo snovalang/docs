@@ -1,0 +1,78 @@
+title: Snovalang Documentation
+description: >-
+  Technical reference for the Snovalang programming language, the snovac ISO C11
+  compiler, SnBC bytecode, runtime architecture, builtin library, and roadmap.
+url: "https://snovalang.github.io"
+baseurl: "/docs"
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+  auto_ids: true
+  toc_levels: 2..3
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+languages:
+  - code: en
+    name: English
+    short: EN
+    html_lang: en
+  - code: pt-br
+    name: Português (BR)
+    short: PT-BR
+    html_lang: pt-BR
+  - code: es
+    name: Español
+    short: ES
+    html_lang: es
+
+repository:
+  org: snovalang
+  compiler: https://github.com/snovalang/snovac
+  lsp: https://github.com/snovalang/snova-lsp
+  extensions: https://github.com/snovalang/editor-extensions
+  docs: https://github.com/snovalang/docs
+
+defaults:
+  - scope:
+      path: "en"
+    values:
+      layout: default
+      lang: en
+  - scope:
+      path: "pt-br"
+    values:
+      layout: default
+      lang: pt-br
+  - scope:
+      path: "es"
+    values:
+      layout: default
+      lang: es
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/

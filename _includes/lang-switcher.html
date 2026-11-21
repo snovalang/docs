@@ -1,0 +1,23 @@
+{% assign current_lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[current_lang] %}
+<nav class="lang-switcher" aria-label="{{ t.language_label }}">
+  {% for lang_item in site.languages %}
+    {% assign target_url = '/' | append: lang_item.code | append: '/' %}
+    {% if page.page_id %}
+      {% assign lang_groups = site.data.navigation[lang_item.code] %}
+      {% for grp in lang_groups %}
+        {% for item in grp.items %}
+          {% if item.id == page.page_id %}
+            {% assign target_url = item.url %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+    <a class="lang-pill{% if lang_item.code == current_lang %} is-active{% endif %}"
+       href="{{ target_url | relative_url }}"
+       hreflang="{{ lang_item.html_lang }}"
+       title="{{ lang_item.name }}">
+      {{ lang_item.short }}
+    </a>
+  {% endfor %}
+</nav>

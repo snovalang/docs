@@ -1,0 +1,29 @@
+{% assign current_lang = page.lang | default: "en" %}
+{% assign nav_groups = site.data.navigation[current_lang] %}
+{% assign t = site.data.i18n[current_lang] %}
+<aside class="doc-sidebar" id="doc-sidebar" aria-label="Documentation navigation">
+  <nav class="sidebar-nav">
+    {% for grp in nav_groups %}
+    <div class="sidebar-group">
+      <p class="sidebar-group-title">{{ grp.group }}</p>
+      <ul class="sidebar-list">
+        {% for item in grp.items %}
+        {% assign is_active = false %}
+        {% if item.id == page.page_id %}
+          {% assign is_active = true %}
+        {% endif %}
+        <li>
+          <a class="sidebar-link{% if is_active %} is-active{% endif %}" href="{{ item.url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>
+            <span>{{ item.title }}</span>
+            {% if item.badge %}
+            <span class="status-pill status-{{ item.badge | replace: '_', '-' }}">{{ t.status[item.badge] }}</span>
+            {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </nav>
+</aside>
+<div class="sidebar-overlay" id="sidebar-overlay" hidden></div>

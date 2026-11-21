@@ -1,0 +1,122 @@
+en:
+  - group: "Getting Started"
+    items:
+      - id: overview
+        title: "Overview & Quick Start"
+        url: "/en/"
+  - group: "Language Reference"
+    items:
+      - id: language-spec
+        title: "Language Specification"
+        url: "/en/language-specification/"
+      - id: type-system
+        title: "Type System & Generics"
+        url: "/en/type-system/"
+      - id: memory-and-errors
+        title: "Memory, Ownership & Errors"
+        url: "/en/memory-and-errors/"
+      - id: concurrency
+        title: "Concurrency & Pulsar"
+        url: "/en/concurrency/"
+  - group: "Compiler & Runtime"
+    items:
+      - id: compiler-architecture
+        title: "Compiler Implementation (snovac)"
+        url: "/en/compiler-architecture/"
+      - id: builtin-library
+        title: "Builtin Library"
+        url: "/en/builtin-library/"
+      - id: diagnostics
+        title: "Diagnostics & Verification"
+        url: "/en/diagnostics/"
+  - group: "Toolchain & Roadmap"
+    items:
+      - id: cli-and-tooling
+        title: "CLI, LSP & Editor Extensions"
+        url: "/en/cli-and-tooling/"
+      - id: coming-soon
+        title: "Coming Soon & Roadmap"
+        url: "/en/coming-soon/"
+        badge: coming_soon
+
+pt-br:
+  - group: "Primeiros Passos"
+    items:
+      - id: overview
+        title: "Visão Geral e Início Rápido"
+        url: "/pt-br/"
+  - group: "Referência da Linguagem"
+    items:
+      - id: language-spec
+        title: "Especificação da Linguagem"
+        url: "/pt-br/language-specification/"
+      - id: type-system
+        title: "Sistema de Tipos e Genéricos"
+        url: "/pt-br/type-system/"
+      - id: memory-and-errors
+        title: "Memória, Ownership e Erros"
+        url: "/pt-br/memory-and-errors/"
+      - id: concurrency
+        title: "Concorrência e Pulsar"
+        url: "/pt-br/concurrency/"
+  - group: "Compilador e Runtime"
+    items:
+      - id: compiler-architecture
+        title: "Implementação do Compilador (snovac)"
+        url: "/pt-br/compiler-architecture/"
+      - id: builtin-library
+        title: "Biblioteca Builtin"
+        url: "/pt-br/builtin-library/"
+      - id: diagnostics
+        title: "Diagnósticos e Verificação"
+        url: "/pt-br/diagnostics/"
+  - group: "Ferramentas e Roadmap"
+    items:
+      - id: cli-and-tooling
+        title: "CLI, LSP e Extensões de Editor"
+        url: "/pt-br/cli-and-tooling/"
+      - id: coming-soon
+        title: "Coming Soon e Roadmap"
+        url: "/pt-br/coming-soon/"
+        badge: coming_soon
+
+es:
+  - group: "Primeros Pasos"
+    items:
+      - id: overview
+        title: "Visión General e Inicio Rápido"
+        url: "/es/"
+  - group: "Referencia del Lenguaje"
+    items:
+      - id: language-spec
+        title: "Especificación del Lenguaje"
+        url: "/es/language-specification/"
+      - id: type-system
+        title: "Sistema de Tipos y Genéricos"
+        url: "/es/type-system/"
+      - id: memory-and-errors
+        title: "Memoria, Ownership y Errores"
+        url: "/es/memory-and-errors/"
+      - id: concurrency
+        title: "Concurrencia y Pulsar"
+        url: "/es/concurrency/"
+  - group: "Compilador y Runtime"
+    items:
+      - id: compiler-architecture
+        title: "Implementación del Compilador (snovac)"
+        url: "/es/compiler-architecture/"
+      - id: builtin-library
+        title: "Biblioteca Builtin"
+        url: "/es/builtin-library/"
+      - id: diagnostics
+        title: "Diagnósticos y Verificación"
+        url: "/es/diagnostics/"
+  - group: "Herramientas y Hoja de Ruta"
+    items:
+      - id: cli-and-tooling
+        title: "CLI, LSP y Extensiones de Editor"
+        url: "/es/cli-and-tooling/"
+      - id: coming-soon
+        title: "Coming Soon y Hoja de Ruta"
+        url: "/es/coming-soon/"
+        badge: coming_soon

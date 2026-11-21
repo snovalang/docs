@@ -1,0 +1,5 @@
+{% assign current_lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[current_lang] %}
+{% assign badge_key = include.status | default: "implemented" %}
+{% assign badge_text = include.label | default: t.status[badge_key] %}
+<span class="status-pill status-{{ badge_key | replace: '_', '-' }}">{{ badge_text }}</span>
