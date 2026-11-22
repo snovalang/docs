@@ -1,0 +1,7 @@
+package livro.popvazio
+
+func main(): int {
+    var xs: int[] = []
+    xs.pop()
+    return 0
+}

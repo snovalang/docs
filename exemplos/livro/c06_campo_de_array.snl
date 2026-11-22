@@ -1,0 +1,13 @@
+package livro.campodearray
+
+struct Ponto {
+    public var x: int
+}
+
+func xDe(p: Ponto): int { return p.x }
+
+func main(): int {
+    let pontos = [Ponto { x: 3 }, Ponto { x: 4 }]
+    let segundo: Ponto = pontos[1]
+    return segundo.x + xDe(pontos[0])
+}

@@ -1,0 +1,6 @@
+package livro.erros
+
+func main(): int {
+    let c = 'a'
+    return 0
+}

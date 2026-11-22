@@ -1,0 +1,10 @@
+package livro.profundidade
+
+func descer(n: int): int {
+    if n == 0 { return 0 }
+    return descer(n - 1) + 1
+}
+
+func main(): int {
+    return descer(300) % 256
+}

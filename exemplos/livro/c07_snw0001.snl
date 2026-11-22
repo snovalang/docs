@@ -1,0 +1,7 @@
+package livro.erros
+
+func main(): int {
+    let nome = "sete"
+    if nome == 7 { return 1 }
+    return 0
+}

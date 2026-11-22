@@ -1,0 +1,11 @@
+package livro.erros
+
+struct Caixa {
+    public var valor: int
+}
+
+func main(): int {
+    let c = Caixa { valor: 1 }
+    c.valor = "errado"
+    return 0
+}

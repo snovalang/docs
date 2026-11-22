@@ -1,0 +1,537 @@
+# Saida de referencia de verificar.sh
+# snova-bootstrap 0.1.0-preview.1, arvore de 22/11/2026, raiz snl v0.3.0, Apple M1, macOS 26.5.1
+# Execucao: LIVRO_SNOVA=ok, argumentos 'um dois', SNOVA_MEMORY_REPORT=1 no nativo
+=== c02_ola
+compilar: status 0
+vm: status 0
+Ola, Supernova!
+nativo-compilar: status 0
+nativo: status 0
+Ola, Supernova!
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_comentarios
+compilar: status 0
+vm: status 3
+nativo-compilar: status 0
+nativo: status 3
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_controle
+compilar: status 0
+vm: status 25
+negativo
+zero
+positivo
+25
+nativo-compilar: status 0
+nativo: status 25
+negativo
+zero
+positivo
+25
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_inteiros
+compilar: status 0
+vm: status 0
+-8446744073709551626
+-9223372036854775808
+9223372036854775807
+nativo-compilar: status 0
+nativo: status 0
+-8446744073709551626
+-9223372036854775808
+9223372036854775807
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_let_reatribuido
+compilar: status 0
+vm: status 2
+nativo-compilar: status 0
+nativo: status 2
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_match_sem_braco
+compilar: status 0
+vm: status 70
+runtime error: bodyless routine trapped
+nativo-compilar: status 0
+nativo: status 70
+runtime error: bodyless routine trapped
+=== c03_match
+compilar: status 0
+vm: status 0
+zero
+um
+muitos
+cinco
+nativo-compilar: status 0
+nativo: status 0
+zero
+um
+muitos
+cinco
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_operadores
+compilar: status 0
+vm: status 0
+14
+20
+3
+2
+-3
+-2
+2
+7
+5
+1024
+-4
+false
+false
+true
+0
+0
+nativo-compilar: status 0
+nativo: status 0
+14
+20
+3
+2
+-3
+-2
+2
+7
+5
+1024
+-4
+false
+false
+true
+0
+0
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_pacote_palavra_chave
+compilar: status 1 | error[SNV2001]: parse error at line 1, span 14..19
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 1, span 14..19
+=== c03_precedencia
+compilar: status 0
+vm: status 0
+true
+0
+nativo-compilar: status 0
+nativo: status 0
+true
+0
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_sem_inicializador
+compilar: status 0
+vm: status 10
+
+10
+nativo-compilar: status 0
+nativo: status 10
+
+10
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c03_variaveis
+compilar: status 0
+vm: status 2
+Snova
+2
+2
+1
+nativo-compilar: status 0
+nativo: status 2
+Snova
+2
+2
+1
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c04_funcoes
+compilar: status 0
+vm: status 81
+ola, cataclisma
+610
+nativo-compilar: status 0
+nativo: status 81
+ola, cataclisma
+610
+snova memory: live blocks 0, live bytes 0, peak bytes 64
+=== c04_global
+compilar: status 1 | error[SNV2001]: parse error at line 3, span 22..25
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 3, span 22..25
+=== c04_param_sem_tipo
+compilar: status 1 | error[SNV2001]: parse error at line 3, span 40..41
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 3, span 40..41
+=== c04_profundidade
+compilar: status 0
+vm: status 70
+runtime error: Stack overflow
+nativo-compilar: status 0
+nativo: status 70
+runtime error: Stack overflow
+=== c04_return_quebrado
+compilar: status 0
+vm: status 0
+nativo-compilar: status 0
+nativo: status 0
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c05_arrays
+compilar: status 0
+vm: status 0
+4
+40
+20
+40
+3
+3
+ana
+true
+false
+nativo-compilar: status 0
+nativo: status 0
+4
+40
+20
+40
+3
+3
+ana
+true
+false
+snova memory: live blocks 0, live bytes 0, peak bytes 1536
+=== c05_bordas
+compilar: status 0
+vm: status 0
+true
+false
+true
+
+n=3
+nativo-compilar: status 0
+nativo: status 0
+true
+false
+true
+
+n=3
+snova memory: live blocks 0, live bytes 0, peak bytes 256
+=== c05_bytes_texto
+compilar: status 0
+vm: status 0
+Snova
+true
+3
+33
+nativo-compilar: status 0
+nativo: status 0
+Snova
+true
+3
+33
+snova memory: live blocks 0, live bytes 0, peak bytes 82144
+=== c05_for
+compilar: status 0
+vm: status 70
+runtime error: unsupported opcode 56
+nativo-compilar: status 1 | unsupported opcode for native backend: 56
+=== c05_pop_vazio
+compilar: status 0
+vm: status 70
+runtime error: pop from empty array
+nativo-compilar: status 0
+nativo: status 70
+runtime error: pop from empty array
+=== c05_runtime
+compilar: status 0
+vm: status 0
+2
+um
+dois
+true
+true
+conteudo
+4
+83
+ok
+nativo-compilar: status 0
+nativo: status 0
+2
+um
+dois
+true
+true
+conteudo
+4
+83
+ok
+snova memory: live blocks 0, live bytes 0, peak bytes 81952
+=== c05_somar_array
+compilar: status 0
+vm: status 18
+18
+nativo-compilar: status 0
+nativo: status 18
+18
+snova memory: live blocks 0, live bytes 0, peak bytes 192
+=== c05_string_len
+compilar: status 0
+vm: status 70
+runtime error: operand type mismatch for opcode 49
+nativo-compilar: status 0
+nativo: status 70
+runtime error: operand type mismatch for opcode 49
+=== c05_string_ordem
+compilar: status 0
+vm: status 70
+runtime error: operand type mismatch for opcode 26
+nativo-compilar: status 0
+nativo: status 70
+runtime error: operand type mismatch for opcode 26
+=== c05_strings
+compilar: status 0
+vm: status 0
+supernova
+true
+true
+tab	fim
+aspas " e barra \
+linha1
+linha2
+nativo-compilar: status 0
+nativo: status 0
+supernova
+true
+true
+tab	fim
+aspas " e barra \
+linha1
+linha2
+snova memory: live blocks 0, live bytes 0, peak bytes 320
+=== c06_campo_de_array_erro
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 10, function #0
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 826, function #0
+=== c06_campo_de_array
+compilar: status 0
+vm: status 7
+nativo-compilar: status 0
+nativo: status 7
+snova memory: live blocks 0, live bytes 0, peak bytes 320
+=== c06_campo_receptor
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 17, function #1
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 833, function #1
+=== c06_campos_livres
+compilar: status 0
+vm: status 4
+4
+nativo-compilar: status 0
+nativo: status 4
+4
+snova memory: live blocks 0, live bytes 0, peak bytes 64
+=== c06_classe
+compilar: status 0
+vm: status 0
+ana
+147
+bia
+7
+3
+nativo-compilar: status 0
+nativo: status 0
+ana
+147
+bia
+7
+3
+snova memory: live blocks 0, live bytes 0, peak bytes 128
+=== c06_colaborador
+compilar: status 0
+vm: status 10
+nativo-compilar: status 0
+nativo: status 10
+snova memory: live blocks 0, live bytes 0, peak bytes 96
+=== c06_estatico_erro
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 13, function #1
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 829, function #1
+=== c06_interface_anotada
+compilar: status 1 | error[SNV4001]: annotation type does not match initializer at line 13, span 211..212
+nativo-compilar: status 1 | error[SNV4001]: annotation type does not match initializer at line 13, span 211..212
+=== c06_interface_bug_vm
+compilar: status 0
+vm: status 70
+quadrado
+runtime error: method not found for concrete type 4
+nativo-compilar: status 0
+nativo: status 19
+quadrado
+retangulo
+19
+quadrado
+16
+snova memory: live blocks 0, live bytes 0, peak bytes 192
+=== c06_interface
+compilar: status 0
+vm: status 19
+9
+10
+nativo-compilar: status 0
+nativo: status 19
+9
+10
+snova memory: live blocks 0, live bytes 0, peak bytes 128
+=== c06_metodo_get
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 10, function #1
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 826, function #1
+=== c06_privado
+compilar: status 0
+vm: status 14
+nativo-compilar: status 0
+nativo: status 14
+snova memory: live blocks 0, live bytes 0, peak bytes 64
+=== c06_retorno_anotado
+compilar: status 0
+vm: status 8
+nativo-compilar: status 0
+nativo: status 8
+snova memory: live blocks 0, live bytes 0, peak bytes 64
+=== c06_retorno_sem_tipo
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 12, function #1
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 828, function #1
+=== c06_struct
+compilar: status 0
+vm: status 11
+11
+true
+99
+true
+nativo-compilar: status 0
+nativo: status 11
+11
+true
+99
+true
+snova memory: live blocks 0, live bytes 0, peak bytes 576
+=== c06_this
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 11, function #0
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 827, function #0
+=== c06_trait
+compilar: status 0
+vm: status 0
+bip, mundo
+bip, direto
+nativo-compilar: status 0
+nativo: status 0
+bip, mundo
+bip, direto
+snova memory: live blocks 0, live bytes 0, peak bytes 128
+=== c07_aridade
+compilar: status 1 | invalid generated SnBC image
+nativo-compilar: status 1 | invalid generated SnBC image
+=== c07_nao_detectado
+compilar: status 0
+vm: status 70
+nao sou int
+runtime error: operand type mismatch for opcode 12
+nativo-compilar: status 0
+nativo: status 70
+nao sou int
+runtime error: operand type mismatch for opcode 12
+=== c07_snv1001
+compilar: status 1 | error[SNV1001]: lexical error at line 4, span 40..55
+nativo-compilar: status 1 | error[SNV1001]: lexical error at line 4, span 40..55
+=== c07_snv2001
+compilar: status 1 | error[SNV2001]: parse error at line 5, span 61..62
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 5, span 61..62
+=== c07_snv3001
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 5, function #0
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 821, function #0
+=== c07_snv4001
+compilar: status 1 | error[SNV4001]: annotation type does not match initializer at line 4, span 48..49
+nativo-compilar: status 1 | error[SNV4001]: annotation type does not match initializer at line 4, span 48..49
+=== c07_snv4002
+compilar: status 1 | error[SNV4002]: assignment type does not match local binding at line 5, span 66..67
+nativo-compilar: status 1 | error[SNV4002]: assignment type does not match local binding at line 5, span 66..67
+=== c07_snv4003
+compilar: status 1 | error[SNV4003]: assignment type does not match field at line 9, span 121..122
+nativo-compilar: status 1 | error[SNV4003]: assignment type does not match field at line 9, span 121..122
+=== c07_snv5001
+compilar: status 1 | error[SNV5001]: type does not satisfy declared contract at line 4, span 56..60
+nativo-compilar: status 1 | error[SNV5001]: type does not satisfy declared contract at line 4, span 56..60
+=== c07_snw0001
+compilar: status 0 | warning[SNW0001]: comparison between different types at line 5
+vm: status 0
+nativo-compilar: status 0 | warning[SNW0001]: comparison between different types at line 5
+nativo: status 0
+snova memory: live blocks 0, live bytes 0, peak bytes 192
+=== c08_ciclo
+compilar: status 0
+vm: status 0
+arvore ok
+ciclo criado
+nativo-compilar: status 0
+nativo: status 70
+arvore ok
+runtime error: strong reference cycle rejected for opcode 50
+=== c08_memoria
+compilar: status 0
+vm: status 0
+119999
+nativo-compilar: status 0
+nativo: status 0
+119999
+snova memory: live blocks 0, live bytes 0, peak bytes 576
+=== c09_async
+compilar: status 0
+vm: status 70
+runtime error: unsupported opcode 55
+nativo-compilar: status 1 | unsupported opcode for native backend: 55
+=== c09_atribuicao_indice
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 7, function #0
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 823, function #0
+=== c09_decimal
+compilar: status 1 | error[SNV2001]: parse error at line 4, span 56..57
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 4, span 56..57
+=== c09_defer
+compilar: status 0
+vm: status 70
+runtime error: unsupported opcode 53
+nativo-compilar: status 1 | unsupported opcode for native backend: 53
+=== c09_enum
+compilar: status 0
+vm: status 70
+runtime error: unsupported opcode 42
+nativo-compilar: status 1 | unsupported opcode for native backend: 42
+=== c09_extends_ignorado
+compilar: status 0
+vm: status 2
+nativo-compilar: status 0
+nativo: status 2
+snova memory: live blocks 0, live bytes 0, peak bytes 32
+=== c09_generico
+compilar: status 1 | error[SNV2001]: parse error at line 3, span 39..40
+nativo-compilar: status 1 | error[SNV2001]: parse error at line 3, span 39..40
+=== c09_heranca
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 14, function #2
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 830, function #2
+=== c09_pulsar
+compilar: status 0
+vm: status 70
+runtime error: unsupported opcode 54
+nativo-compilar: status 1 | unsupported opcode for native backend: 54
+=== c09_try
+compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 9, function #0
+nativo-compilar: status 1 | error[SNV3001]: unsupported construct or invalid lowering at line 825, function #0
+=== c11_alocacao
+compilar: status 0
+vm: status 224
+nativo-compilar: status 0
+nativo: status 224
+snova memory: live blocks 0, live bytes 0, peak bytes 576
+=== c11_fib
+compilar: status 0
+vm: status 66
+nativo-compilar: status 0
+nativo: status 66
+snova memory: live blocks 0, live bytes 0, peak bytes 0
+=== c11_laco
+compilar: status 0
+vm: status 253
+nativo-compilar: status 0
+nativo: status 253
+snova memory: live blocks 0, live bytes 0, peak bytes 0

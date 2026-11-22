@@ -1,0 +1,6 @@
+package livro.erros
+
+func main(): int {
+    let resposta: string = 42
+    return 0
+}

@@ -1,0 +1,9 @@
+package livro.matchsembraco
+
+func main(): int {
+    let r = match 9 {
+        1 -> 10,
+        2 -> 20
+    }
+    return r
+}

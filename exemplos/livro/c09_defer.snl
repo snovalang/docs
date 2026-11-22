@@ -1,0 +1,13 @@
+package livro.adiado
+
+import builtin.io.console
+
+func tchau(): unit {
+    Console.printline("defer rodou")
+}
+
+func main(): int {
+    defer tchau()
+    Console.printline("corpo")
+    return 0
+}

@@ -26,6 +26,9 @@ en:
     proposed: "Proposed"
     in_progress: "In Progress"
     blocked: "Blocked"
+    works_today: "Works today in Snova"
+    planned: "Planned"
+    legacy: "Legacy: snovac"
 
 pt-br:
   site_title: "Docs Snovalang"
@@ -55,6 +58,9 @@ pt-br:
     proposed: "Proposto"
     in_progress: "Em Andamento"
     blocked: "Bloqueado"
+    works_today: "Funciona hoje no Snova"
+    planned: "Planejado"
+    legacy: "Legado: snovac"
 
 es:
   site_title: "Docs Snovalang"
@@ -84,3 +90,6 @@ es:
     proposed: "Propuesto"
     in_progress: "En Progreso"
     blocked: "Bloqueado"
+    works_today: "Funciona hoy en Snova"
+    planned: "Planificado"
+    legacy: "Legado: snovac"

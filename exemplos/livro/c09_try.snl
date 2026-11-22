@@ -1,0 +1,9 @@
+package livro.tentativa
+
+func main(): int {
+    try {
+        return 1
+    } catch e {
+        return 2
+    }
+}

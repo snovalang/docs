@@ -1,0 +1,29 @@
+package livro.memoria
+
+import builtin.io.console
+import builtin.runtime
+
+struct Registro {
+    public var rotulo: string
+    public var itens: int[]
+}
+
+func construir(i: int): Registro {
+    var itens = [i, i + 1]
+    itens.push(i + 2)
+    return Registro { rotulo: "item-" + "x", itens: itens }
+}
+
+func main(): int {
+    let voltas = 20000 * Runtime.argumentCount()
+    var atual: Registro = construir(0)
+    var total = 0
+    var i = 0
+    while i < voltas {
+        atual = construir(i)
+        total = total + atual.itens[2] % 7
+        i = i + 1
+    }
+    Console.printline(total)
+    return 0
+}

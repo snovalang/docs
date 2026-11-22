@@ -1,0 +1,24 @@
+package livro.bytestexto
+
+import builtin.io.console
+import builtin.runtime
+
+func paraTexto(bytes: int[], rascunho: string): string {
+    write_bytes(rascunho, bytes)
+    return Runtime.readText(rascunho)
+}
+
+func paraBytes(texto: string, rascunho: string): int[] {
+    Runtime.writeText(rascunho, texto)
+    return read_bytes(rascunho)
+}
+
+func main(): int {
+    let texto = paraTexto([83, 110, 111, 118, 97], "livro-rascunho.bin")
+    Console.printline(texto)
+    Console.printline(texto == "Snova")
+    let bytes = paraBytes("ok!", "livro-rascunho.bin")
+    Console.printline(bytes.len())
+    Console.printline(bytes[2])
+    return 0
+}

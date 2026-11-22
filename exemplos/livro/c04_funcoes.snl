@@ -1,0 +1,20 @@
+package livro.funcoes
+
+import builtin.io.console
+
+func main(): int {
+    saudar("cataclisma")
+    Console.printline(fibonacci(15))
+    return quadrado(9)
+}
+
+func quadrado(n: int): int = n * n
+
+func saudar(nome: string) {
+    Console.printline("ola, " + nome)
+}
+
+func fibonacci(n: int): int {
+    if n < 2 { return n }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}

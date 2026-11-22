@@ -1,0 +1,22 @@
+package livro.arrays
+
+import builtin.io.console
+
+func main(): int {
+    var xs = [10, 20, 30]
+    xs.push(40)
+    Console.printline(xs.len())
+    Console.printline(xs[3])
+    Console.printline(xs.get(1))
+    let ultimo = xs.pop()
+    Console.printline(ultimo)
+    Console.printline(xs.length())
+    var grade = [[1, 2], [3, 4]]
+    Console.printline(grade[1][0])
+    var nomes: string[] = []
+    nomes.push("ana")
+    Console.printline(nomes[0])
+    Console.printline([1, 2] == [1, 2])
+    Console.printline(["x"] == ["x", "y"])
+    return 0
+}

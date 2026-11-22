@@ -1,0 +1,18 @@
+package livro.variaveis
+
+import builtin.io.console
+
+func main(): int {
+    let nome = "Snova"
+    var contador: int = 1
+    contador = contador + 1
+    Console.printline(nome)
+    Console.printline(contador)
+    let x = 1
+    if true {
+        let x = 2
+        Console.printline(x)
+    }
+    Console.printline(x)
+    return contador
+}

@@ -1,0 +1,9 @@
+package livro.geometria
+
+func area(largura: int, altura: int): int {
+    return largura * altura
+}
+
+func perimetro(largura: int, altura: int): int {
+    return 2 * (largura + altura)
+}

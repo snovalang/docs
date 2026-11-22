@@ -1,0 +1,31 @@
+package livro.interfaces
+
+import builtin.io.console
+
+interface Forma {
+    method area(): int
+}
+
+class Quadrado implements Forma {
+    public var lado: int
+    method area(): int { return lado * lado }
+}
+
+class Retangulo implements Forma {
+    public var largura: int
+    public var altura: int
+    method area(): int { return largura * altura }
+}
+
+func criar(tipo: int): Forma {
+    if tipo == 0 { return Quadrado(3) }
+    return Retangulo(2, 5)
+}
+
+func main(): int {
+    let a: Forma = criar(0)
+    let b: Forma = criar(1)
+    Console.printline(a.area())
+    Console.printline(b.area())
+    return a.area() + b.area()
+}

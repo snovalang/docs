@@ -1,0 +1,5 @@
+package livro.erros
+
+func main(): int {
+    return naoExiste
+}

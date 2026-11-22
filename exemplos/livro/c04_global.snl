@@ -1,0 +1,7 @@
+package livro.global
+
+let LIMITE = 10
+
+func main(): int {
+    return LIMITE
+}

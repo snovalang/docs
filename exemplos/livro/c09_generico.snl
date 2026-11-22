@@ -1,0 +1,7 @@
+package livro.generico
+
+func identidade<T>(valor: T): T { return valor }
+
+func main(): int {
+    return identidade(3)
+}

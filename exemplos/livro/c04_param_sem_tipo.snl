@@ -1,0 +1,5 @@
+package livro.paramsemtipo
+
+func dobro(n) { return n * 2 }
+
+func main(): int { return dobro(2) }

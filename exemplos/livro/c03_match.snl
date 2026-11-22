@@ -1,0 +1,22 @@
+package livro.casamento
+
+import builtin.io.console
+
+func nome(n: int): string {
+    return match n {
+        0 -> "zero",
+        1 -> "um",
+        outro -> "muitos"
+    }
+}
+
+func main(): int {
+    Console.printline(nome(0))
+    Console.printline(nome(1))
+    Console.printline(nome(9))
+    match 5 {
+        5 -> Console.printline("cinco"),
+        _ -> Console.printline("outro")
+    }
+    return 0
+}

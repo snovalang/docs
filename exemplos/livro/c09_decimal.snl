@@ -1,0 +1,6 @@
+package livro.decimal
+
+func main(): int {
+    let d = 1.5
+    return 0
+}

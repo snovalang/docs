@@ -1,0 +1,12 @@
+package livro.privado
+
+class Cofre {
+    private var segredo: int = 7
+    private method revelar(): int { return segredo }
+    public method abrir(): int { return revelar() }
+}
+
+func main(): int {
+    let c = Cofre()
+    return c.segredo + c.abrir()
+}

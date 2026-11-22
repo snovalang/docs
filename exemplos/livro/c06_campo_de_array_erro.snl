@@ -1,0 +1,10 @@
+package livro.campodearrayerro
+
+struct Ponto {
+    public var x: int
+}
+
+func main(): int {
+    let pontos = [Ponto { x: 3 }]
+    return pontos[0].x
+}

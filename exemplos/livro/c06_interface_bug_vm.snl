@@ -1,0 +1,41 @@
+package livro.interfacebug
+
+import builtin.io.console
+
+interface Forma {
+    method area(): int
+    method nome(): string
+}
+
+class Quadrado implements Forma {
+    public var lado: int
+    method area(): int { return lado * lado }
+    method nome(): string { return "quadrado" }
+}
+
+class Retangulo implements Forma {
+    public var largura: int
+    public var altura: int
+    method area(): int { return largura * altura }
+    method nome(): string { return "retangulo" }
+}
+
+func criar(tipo: int): Forma {
+    if tipo == 0 { return Quadrado(3) }
+    return Retangulo(2, 5)
+}
+
+func descrever(f: Forma): int {
+    Console.printline(f.nome())
+    return f.area()
+}
+
+func main(): int {
+    let a: Forma = criar(0)
+    let b: Forma = criar(1)
+    let total = descrever(a) + descrever(b)
+    Console.printline(total)
+    let direto = Quadrado(4)
+    Console.printline(descrever(direto))
+    return total
+}

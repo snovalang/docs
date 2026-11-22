@@ -1,0 +1,7 @@
+package livro.erros
+
+func main(): int {
+    var resposta = 42
+    resposta = "errado"
+    return 0
+}

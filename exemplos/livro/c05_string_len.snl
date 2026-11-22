@@ -1,0 +1,6 @@
+package livro.stringlen
+
+func main(): int {
+    let s = "abc"
+    return s.len()
+}

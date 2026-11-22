@@ -1,0 +1,19 @@
+package livro.camposlivres
+
+import builtin.io.console
+
+class Contador {
+    total: int
+    passo: int = 2
+    func avancar(): int {
+        total = total + passo
+        return total
+    }
+}
+
+func main(): int {
+    let c = Contador(0)
+    c.avancar()
+    Console.printline(c.avancar())
+    return c.total
+}

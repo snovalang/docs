@@ -1,0 +1,10 @@
+package livro.precedencia
+
+import builtin.io.console
+
+func main(): int {
+    let x = 6
+    Console.printline((x & 1) == 0)
+    Console.printline(x & 1 == 0)
+    return 0
+}

@@ -1,0 +1,10 @@
+package livro.principal
+
+import builtin.io.console
+import livro.geometria
+
+func main(): int {
+    Console.printline(area(3, 4))
+    Console.printline(perimetro(3, 4))
+    return 0
+}

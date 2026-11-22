@@ -1,0 +1,14 @@
+package livro.heranca
+
+class Animal {
+    public method som(): int { return 1 }
+}
+
+class Cachorro extends Animal {
+    public method latir(): int { return 2 }
+}
+
+func main(): int {
+    let d = Cachorro()
+    return d.som()
+}

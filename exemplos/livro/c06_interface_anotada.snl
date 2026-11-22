@@ -1,0 +1,15 @@
+package livro.interfaceanotada
+
+interface Forma {
+    method area(): int
+}
+
+class Quadrado implements Forma {
+    public var lado: int
+    method area(): int { return lado * lado }
+}
+
+func main(): int {
+    let f: Forma = Quadrado(3)
+    return f.area()
+}

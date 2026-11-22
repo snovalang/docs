@@ -1,0 +1,9 @@
+package livro.paracada
+
+func main(): int {
+    var total = 0
+    for x in [5, 6, 7] {
+        total = total + x
+    }
+    return total
+}

@@ -1,0 +1,7 @@
+package livro.letreatribuido
+
+func main(): int {
+    let fixo = 1
+    fixo = 2
+    return fixo
+}

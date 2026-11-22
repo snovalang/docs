@@ -1,0 +1,6 @@
+package livro.stringordem
+
+func main(): int {
+    if "a" < "b" { return 1 }
+    return 0
+}

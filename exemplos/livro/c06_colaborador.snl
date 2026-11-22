@@ -1,0 +1,18 @@
+package livro.colaborador
+
+class Motor {
+    public method potencia(): int { return 5 }
+}
+
+class Carro {
+    public var motor: Motor
+    public method potencia(): int {
+        let m: Motor = motor
+        return m.potencia() * 2
+    }
+}
+
+func main(): int {
+    let c = Carro(Motor())
+    return c.potencia()
+}

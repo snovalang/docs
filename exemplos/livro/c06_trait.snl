@@ -1,0 +1,24 @@
+package livro.traits
+
+import builtin.io.console
+
+trait Saudacao {
+    method saudar(nome: string): string
+}
+
+class Robo {
+}
+
+impl Saudacao for Robo {
+    method saudar(nome: string): string { return "bip, " + nome }
+}
+
+func escolher(): Saudacao { return Robo() }
+
+func main(): int {
+    let s: Saudacao = escolher()
+    Console.printline(s.saudar("mundo"))
+    let r = Robo()
+    Console.printline(r.saudar("direto"))
+    return 0
+}

@@ -1,0 +1,23 @@
+package livro.operadores
+
+import builtin.io.console
+
+func main(): int {
+    Console.printline(2 + 3 * 4)
+    Console.printline((2 + 3) * 4)
+    Console.printline(17 / 5)
+    Console.printline(17 % 5)
+    Console.printline(-17 / 5)
+    Console.printline(-17 % 5)
+    Console.printline(6 & 3)
+    Console.printline(6 | 3)
+    Console.printline(6 ^ 3)
+    Console.printline(1 << 10)
+    Console.printline(-8 >> 1)
+    Console.printline(!true)
+    Console.printline(1 < 2 && 3 > 4)
+    Console.printline(1 < 2 || 3 > 4)
+    Console.printline(7 / 0)
+    Console.printline(7 % 0)
+    return 0
+}

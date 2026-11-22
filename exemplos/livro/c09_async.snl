@@ -1,0 +1,13 @@
+package livro.assincrono
+
+import builtin.io.console
+
+async func calcular(n: int): int {
+    return n * 2
+}
+
+func main(): int {
+    let v = await calcular(21)
+    Console.printline(v)
+    return 0
+}

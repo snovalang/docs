@@ -1,0 +1,12 @@
+package livro.retornoanotado
+
+struct Ponto {
+    public var x: int
+}
+
+func criar(): Ponto { return Ponto { x: 8 } }
+
+func main(): int {
+    let p: Ponto = criar()
+    return p.x
+}

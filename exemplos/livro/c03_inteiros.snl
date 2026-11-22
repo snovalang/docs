@@ -1,0 +1,11 @@
+package livro.inteiros
+
+import builtin.io.console
+
+func main(): int {
+    let grande = 999999999999999999
+    Console.printline(grande * 10)
+    Console.printline(1 << 63)
+    Console.printline((1 << 63) - 1)
+    return 0
+}

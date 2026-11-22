@@ -1,0 +1,10 @@
+package livro.metodoget
+
+class Caixa {
+    public method get(): int { return 5 }
+}
+
+func main(): int {
+    let c = Caixa()
+    return c.get()
+}

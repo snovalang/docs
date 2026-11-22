@@ -1,0 +1,27 @@
+package livro.estruturas
+
+import builtin.io.console
+
+struct Ponto {
+    public var x: int
+    public var y: int
+    public var nome: string
+}
+
+func deslocar(p: Ponto, dx: int): unit {
+    p.x = p.x + dx
+}
+
+func main(): int {
+    var p = Ponto { x: 1, y: 2, nome: "p" }
+    deslocar(p, 10)
+    Console.printline(p.x)
+    let q = Ponto { x: 11, y: 2, nome: "p" }
+    Console.printline(p == q)
+    let apelido = p
+    apelido.y = 99
+    Console.printline(p.y)
+    let parcial = Ponto { x: 5 }
+    Console.printline(parcial.nome == "")
+    return p.x
+}

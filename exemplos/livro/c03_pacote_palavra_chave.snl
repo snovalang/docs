@@ -1,0 +1,5 @@
+package livro.match
+
+func main(): int {
+    return 0
+}

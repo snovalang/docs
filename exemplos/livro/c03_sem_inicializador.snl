@@ -1,0 +1,11 @@
+package livro.seminicializador
+
+import builtin.io.console
+
+func main(): int {
+    var total: int
+    Console.printline(total)
+    total = 10
+    Console.printline(total)
+    return total
+}

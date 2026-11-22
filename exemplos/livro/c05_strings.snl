@@ -1,0 +1,15 @@
+package livro.strings
+
+import builtin.io.console
+
+func main(): int {
+    let a = "super" + "nova"
+    let b = "su" + "pernova"
+    Console.printline(a)
+    Console.printline(a == b)
+    Console.printline(a != "nova")
+    Console.printline("tab\tfim")
+    Console.printline("aspas \" e barra \\")
+    Console.printline("linha1\nlinha2")
+    return 0
+}

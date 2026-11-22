@@ -1,0 +1,19 @@
+package livro.bench
+
+struct Celula {
+    public var rotulo: string
+    public var itens: int[]
+}
+
+func main(): int {
+    var total = 0
+    var i = 0
+    while i < 300000 {
+        var itens = [i, i + 1]
+        itens.push(i + 2)
+        let c = Celula { rotulo: "c" + "x", itens: itens }
+        total = total + c.itens[2] % 3
+        i = i + 1
+    }
+    return total % 256
+}

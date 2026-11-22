@@ -1,0 +1,24 @@
+package livro.runtime
+
+import builtin.io.console
+import builtin.runtime
+
+func main(): int {
+    let quantos = Runtime.argumentCount()
+    Console.printline(quantos)
+    var i = 0
+    while i < quantos {
+        Console.printline(Runtime.argument(i))
+        i = i + 1
+    }
+    let caminho = "livro-runtime.txt"
+    Console.printline(Runtime.writeText(caminho, "conteudo"))
+    Console.printline(Runtime.fileExists(caminho))
+    Console.printline(Runtime.readText(caminho))
+    write_bytes(caminho, [83, 78, 66, 67])
+    let bytes = read_bytes(caminho)
+    Console.printline(bytes.len())
+    Console.printline(bytes[0])
+    Console.printline(Runtime.environment("LIVRO_SNOVA"))
+    return 0
+}

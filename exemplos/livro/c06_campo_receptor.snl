@@ -1,0 +1,17 @@
+package livro.camporeceptor
+
+class Motor {
+    public method potencia(): int { return 5 }
+}
+
+class Carro {
+    public var motor: Motor
+    public method potencia(): int {
+        return motor.potencia() * 2
+    }
+}
+
+func main(): int {
+    let c = Carro(Motor())
+    return c.potencia()
+}

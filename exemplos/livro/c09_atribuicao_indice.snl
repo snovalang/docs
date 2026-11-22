@@ -1,0 +1,7 @@
+package livro.indice
+
+func main(): int {
+    var xs = [1, 2, 3]
+    xs[0] = 9
+    return xs[0]
+}

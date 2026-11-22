@@ -1,0 +1,13 @@
+package livro.estaticoerro
+
+class Contador {
+    public var total: int
+    public method somar(n: int): int {
+        total = total + n
+        return total
+    }
+}
+
+func main(): int {
+    return Contador.somar(1)
+}

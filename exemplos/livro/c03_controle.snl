@@ -1,0 +1,29 @@
+package livro.controle
+
+import builtin.io.console
+
+func classificar(n: int): string {
+    if n < 0 {
+        return "negativo"
+    } else if n == 0 {
+        return "zero"
+    } else {
+        return "positivo"
+    }
+}
+
+func main(): int {
+    Console.printline(classificar(-3))
+    Console.printline(classificar(0))
+    Console.printline(classificar(8))
+    var i = 0
+    var soma = 0
+    while true {
+        i = i + 1
+        if i > 10 { break }
+        if i % 2 == 0 { continue }
+        soma = soma + i
+    }
+    Console.printline(soma)
+    return soma
+}

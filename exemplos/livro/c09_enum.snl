@@ -1,0 +1,11 @@
+package livro.enums
+
+enum Cor {
+    Vermelho
+    Verde
+}
+
+func main(): int {
+    let c = Cor.Verde
+    return 0
+}

@@ -1,0 +1,17 @@
+package livro.ciclo
+
+import builtin.io.console
+
+struct No {
+    public var filhos: No[]
+}
+
+func main(): int {
+    var a = No { filhos: [] }
+    var b = No { filhos: [] }
+    a.filhos.push(b)
+    Console.printline("arvore ok")
+    b.filhos.push(a)
+    Console.printline("ciclo criado")
+    return 0
+}

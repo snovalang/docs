@@ -45,6 +45,51 @@ pt-br:
       - id: overview
         title: "Visão Geral e Início Rápido"
         url: "/pt-br/"
+  - group: "Livro: Snova, a linguagem cataclisma"
+    items:
+      - id: livro-capa
+        title: "Capa e sumário"
+        url: "/pt-br/livro/"
+      - id: livro-01
+        title: "1. Apresentação e escopo"
+        url: "/pt-br/livro/01-apresentacao/"
+      - id: livro-02
+        title: "2. Instalação e primeiros passos"
+        url: "/pt-br/livro/02-primeiros-passos/"
+      - id: livro-03
+        title: "3. Fundamentos da linguagem"
+        url: "/pt-br/livro/03-fundamentos/"
+      - id: livro-04
+        title: "4. Funções e organização"
+        url: "/pt-br/livro/04-funcoes/"
+      - id: livro-05
+        title: "5. Strings e coleções"
+        url: "/pt-br/livro/05-strings-e-colecoes/"
+      - id: livro-06
+        title: "6. Tipos compostos e OO"
+        url: "/pt-br/livro/06-tipos-compostos/"
+      - id: livro-07
+        title: "7. Diagnósticos"
+        url: "/pt-br/livro/07-diagnosticos/"
+      - id: livro-08
+        title: "8. VM e backend nativo"
+        url: "/pt-br/livro/08-vm-e-nativo/"
+      - id: livro-09
+        title: "9. Recursos planejados"
+        url: "/pt-br/livro/09-recursos-planejados/"
+        badge: planned
+      - id: livro-10
+        title: "10. Arquitetura do compilador"
+        url: "/pt-br/livro/10-arquitetura/"
+      - id: livro-11
+        title: "11. Desempenho e benchmarks"
+        url: "/pt-br/livro/11-desempenho/"
+      - id: livro-12
+        title: "12. Histórico e compatibilidade"
+        url: "/pt-br/livro/12-historico/"
+      - id: livro-13
+        title: "13. Apêndices"
+        url: "/pt-br/livro/13-apendices/"
   - group: "Referência da Linguagem"
     items:
       - id: language-spec

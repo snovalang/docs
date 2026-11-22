@@ -1,0 +1,15 @@
+package livro.erros
+
+import builtin.io.console
+
+func dobro(n: int): int { return n * 2 }
+
+func texto(): int {
+    return "nao sou int"
+}
+
+func main(): int {
+    Console.printline(texto())
+    Console.printline("n=" + dobro(2))
+    return 0
+}

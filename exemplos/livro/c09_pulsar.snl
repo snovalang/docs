@@ -1,0 +1,12 @@
+package livro.pulso
+
+import builtin.io.console
+
+func trabalho(n: int): unit {
+    Console.printline(n)
+}
+
+func main(): int {
+    pulsar trabalho(1)
+    return 0
+}

@@ -1,0 +1,9 @@
+package livro.comentarios
+
+/* comentario de bloco
+   em varias linhas */
+func main(): int {
+    // comentario de linha
+    var a = 1; var b = 2;
+    return a + /* no meio da expressao */ b
+}

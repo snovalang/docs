@@ -1,0 +1,10 @@
+package livro.erros
+
+interface Arquitetura {
+    method bits(): int
+}
+
+class Desconhecida implements Arquitetura {
+}
+
+func main(): int { return 0 }

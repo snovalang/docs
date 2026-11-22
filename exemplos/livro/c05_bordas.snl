@@ -1,0 +1,17 @@
+package livro.bordas
+
+import builtin.io.console
+import builtin.runtime
+
+func main(): int {
+    let ausente = Runtime.environment("LIVRO_NAO_DEFINIDA")
+    Console.printline(ausente == "")
+    Console.printline(Runtime.fileExists("livro-nao-existe.txt"))
+    let fora = Runtime.argument(99)
+    Console.printline(fora == "")
+    var xs = [1, 2, 3]
+    Console.printline(xs[5])
+    Console.print("n=")
+    Console.printline(xs.len())
+    return 0
+}

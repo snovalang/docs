@@ -68,6 +68,40 @@
     }
   }
 
+  /* 3b. Snova syntax highlighting (Rouge has no Snova lexer).
+     Small hand-written tokenizer: comments, strings, numbers, keywords,
+     type names and annotations. Keyword list matches the current compiler
+     (Lex.snl classify + ScopeParse.snl classifyScope). */
+  var snovaKeywords = /^(package|import|struct|class|interface|trait|enum|impl|implements|extends|func|method|public|private|static|let|var|return|if|else|while|for|in|break|continue|match|defer|pulsar|async|await|true|false|null)$/;
+  var snovaTypes = /^(int|bool|string|unit)$/;
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function highlightSnova(src) {
+    var out = "";
+    var re = /(\/\/[^\n]*|\/\*[\s\S]*?\*\/)|("(?:\\.|[^"\\\n])*")|(@[A-Za-z_]\w*)|(\b\d+\b)|([A-Za-z_]\w*)|([\s\S])/g;
+    var m;
+    while ((m = re.exec(src)) !== null) {
+      if (m[1]) out += '<span class="c">' + escapeHtml(m[1]) + "</span>";
+      else if (m[2]) out += '<span class="s">' + escapeHtml(m[2]) + "</span>";
+      else if (m[3]) out += '<span class="nd">' + escapeHtml(m[3]) + "</span>";
+      else if (m[4]) out += '<span class="mi">' + m[4] + "</span>";
+      else if (m[5]) {
+        var w = m[5];
+        if (snovaKeywords.test(w)) out += '<span class="k">' + w + "</span>";
+        else if (snovaTypes.test(w)) out += '<span class="kt">' + w + "</span>";
+        else if (/^[A-Z]/.test(w)) out += '<span class="nc">' + w + "</span>";
+        else out += w;
+      } else out += escapeHtml(m[6]);
+    }
+    return out;
+  }
+  /* kramdown emits <pre><code class="language-snova"> when Rouge has no lexer */
+  Array.prototype.slice.call(document.querySelectorAll("pre > code.language-snova, .language-snova pre code")).forEach(function (code) {
+    code.innerHTML = highlightSnova(code.textContent);
+    code.parentNode.classList.add("highlight");
+  });
+
   /* 4. Copy buttons on code blocks */
   var copyLabel = body.getAttribute("data-copy-label") || "Copy";
   var copiedLabel = body.getAttribute("data-copied-label") || "Copied";

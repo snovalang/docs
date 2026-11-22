@@ -1,0 +1,37 @@
+package livro.classe
+
+import builtin.io.console
+
+class Conta {
+    public var dono: string
+    public var saldo: int = 100
+
+    public method depositar(valor: int): int {
+        saldo = saldo + valor
+        return saldo
+    }
+
+    public method relatorio(): unit {
+        Console.printline(dono)
+        Console.printline(saldo)
+    }
+
+    public static method taxa(): int {
+        return 3
+    }
+
+    public method cobrar(): unit {
+        saldo = saldo - taxa()
+    }
+}
+
+func main(): int {
+    let a = Conta("ana")
+    a.depositar(50)
+    a.cobrar()
+    a.relatorio()
+    let b = Conta("bia", 7)
+    b.relatorio()
+    Console.printline(Conta.taxa())
+    return 0
+}

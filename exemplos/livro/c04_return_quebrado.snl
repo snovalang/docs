@@ -1,0 +1,10 @@
+package livro.returnquebrado
+
+func valor(): int {
+    return
+        42
+}
+
+func main(): int {
+    return valor()
+}

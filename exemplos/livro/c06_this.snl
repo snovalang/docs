@@ -1,0 +1,11 @@
+package livro.this
+
+class C {
+    public var v: int
+    public method valor(): int { return this.v }
+}
+
+func main(): int {
+    let c = C(3)
+    return c.valor()
+}

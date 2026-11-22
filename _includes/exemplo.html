@@ -1,0 +1,13 @@
+{% comment %}
+  Metadados de exemplo do livro.
+  Parâmetros: status (works_today | planned | legacy), arquivo, modos, cmd, nota.
+{% endcomment %}
+{% assign ex_status = include.status | default: "works_today" %}
+<div class="example-meta">
+  {% include status-badge.html status=ex_status %}
+  {% if ex_status == "works_today" %}<code>snova-bootstrap 0.1.0-preview.1</code> · árvore de 22/11/2026 · raiz <code>snl v0.3.0</code> · {% endif %}
+  {% if include.modos %}Modo: {{ include.modos }} · {% endif %}
+  {% if include.arquivo %}Arquivo: <a href="{{ '/exemplos/livro/' | append: include.arquivo | relative_url }}"><code>{{ include.arquivo }}</code></a>{% endif %}
+  {% if include.cmd %} · Comando: <code>{{ include.cmd }}</code>{% endif %}
+  {% if include.nota %}<br>{{ include.nota }}{% endif %}
+</div>
